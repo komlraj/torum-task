@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+  font-family: sans-serif !important;
 }
 ol, ul {
 	list-style: none;
@@ -78,3 +79,78 @@ Dashboard Css
   height: calc(100vh - 170px);
 }
 
+/*===========================================
+Post Card Styles
+=============================================*/
+
+.post-card {
+  display: block;
+  padding: 20px;
+  margin-bottom: 24px;
+  background: #fff;
+  cursor: pointer;
+
+  .title {
+    font-size: 21px;
+    font-weight: 600;
+    color: #424242;
+    font-family: sans-serif !important;
+    margin: 16px 0px;
+  }
+
+  .desc {
+    font-size: 15px;
+    font-weight: 500;
+    color: #999;
+  }
+
+  .tag {
+    padding: 4px 8px;
+    border: 1px solid #de903e70;
+    border-radius: 35px;
+    font-size: 12px;
+    letter-spacing: 0.2px;
+    color: #ff8a10;
+    margin-right: 4px;
+  }
+
+  .post-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+  }
+
+  .fav-count {
+    font-size: 12px;
+    align-self: center;
+    color: #bbb;
+    .fas {
+      margin-right: 4px;
+      font-size: 18px;
+      color: #ff0000bd;
+    }
+  }
+
+}
+.post-card:hover {
+  box-shadow: 3px 5px 8px 0.5px #9e9c9c4a;
+}
+.post-card-header {
+  display: flex;
+  align-items: center;
+}
+.author-img {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+}
+.author-name {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0px 16px;
+}
+.date {
+  color: #bbb;
+  font-size: 12px;
+}
