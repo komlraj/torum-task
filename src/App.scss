@@ -154,3 +154,28 @@ Post Card Styles
   color: #bbb;
   font-size: 12px;
 }
+
+/*=============================================
+Header styles
+===============================================*/
+
+.header {
+  padding: 20px;
+  box-shadow: 3px 3px 8px 0.5px #f1efef;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  margin-left: 3rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.none {
+  display: none;
+}
+a {
+  text-decoration: none;
+  color: #33c3f0;
+}
+

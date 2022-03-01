@@ -5,4 +5,10 @@ export const formatDate = (date) => {
   return ddate.toDateString();
 };
 
+export const getUserData = () => {
+  const user = JSON.parse(localStorage.getItem("user"));
+  if (user?.token) return user;
+}
+
 export const API_BASE_URL = `https://api.realworld.io/api/articles`;
+export const LOGIN_API = `https://api.realworld.io/api/users/login`;

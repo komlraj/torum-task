@@ -1,18 +1,19 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import './App.css';
+import './App.scss';
 import routes from "./routes";
-import Header from "./components/Header";
+import APIContextProvider from "./contexts";
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className="App">
-        <Header />
-        <Routes>
-          {routes?.map(route => (<Route exact path={route?.url} element={<route.component />} />))}
-        </Routes>
-      </div>
-    </BrowserRouter>
+    <APIContextProvider>
+      <BrowserRouter>
+        <div>
+          <Routes>
+            {routes?.map(route => (<Route key={route?.url} exact path={route?.url} element={<route.component />} />))}
+          </Routes>
+        </div>
+      </BrowserRouter>
+    </APIContextProvider>
   );
 }
 
