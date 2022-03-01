@@ -18,7 +18,7 @@ const PostCard = ({ post = {} }) => {
           {post?.tagList?.map(tag => <span key={tag} className="tag">{tag}</span>)}
         </div>
         <div className="fav-count">
-          <i class="fas fa-heart"></i>
+          <i className="fas fa-heart"></i>
           <span>{post?.favoritesCount}</span>
         </div>
       </div>
